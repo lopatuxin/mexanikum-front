@@ -1,6 +1,7 @@
+import navBar from './NavBar.module.css'
 export const NavBar = () => {
     return (
-        <nav className='navBar'>
+        <nav className={navBar.navBar}>
             <div>Профиль</div>
             <div>Курс</div>
             <div>Сообщество</div>

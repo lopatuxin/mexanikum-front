@@ -5,40 +5,7 @@
         "header header"
         "navBar content";
     grid-template-rows: 60px 1fr;
-    grid-auto-columns: 2fr 10fr;
-    background: linear-gradient(45deg, #2a2d34, #009ddc, #f26430, #6761a8, #009b72);
-    background-size: 200% 200%;
-    animation: gradientAnimation 10s ease infinite;
-    transition: background 5s ease;
+    grid-auto-columns: 1fr 10fr;
+    background-color: #EBEBEB;
     height: 100vh;
-}
-
-.header {
-    grid-area: header;
-    background-color: #2a2d34;
-    color: aliceblue;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.5);
-}
-
-.navBar {
-    grid-area: navBar;
-    background-color: #2a2d34;
-    color: aliceblue;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
-}
-
-.content {
-    grid-area: content;
-    background-color: aliceblue;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
 }

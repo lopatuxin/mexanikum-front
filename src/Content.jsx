@@ -1,6 +1,7 @@
+import content from './Content.module.css'
 export const Content = () => {
     return (
-        <div className='content'>Контент</div>
+        <div className={content.content}>Контент</div>
     )
 }
 
