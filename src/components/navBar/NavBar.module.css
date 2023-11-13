@@ -1,0 +1,21 @@
+.navBar {
+    grid-area: navBar;
+    display: grid;
+    grid-template-areas:
+        "profile"
+        "course"
+        "community";
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* Стили для элементов внутри navBar */
+
+
+
+
