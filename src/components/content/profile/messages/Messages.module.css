@@ -18,6 +18,10 @@
     height: 70px;
 }
 
+.message:hover {
+    background-color: #C0E8F6;
+}
+
 .avatar {
     grid-area: avatar;
     height: 65px;
