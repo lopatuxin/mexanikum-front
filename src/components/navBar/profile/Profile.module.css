@@ -9,6 +9,7 @@
 .header {
     color: aliceblue;
     font-family: Tahoma, serif;
+    text-shadow: 2px 2px 4px black;
 }
 
 .separator {
@@ -22,6 +23,7 @@
     color: #EBEBEB;
     text-decoration: none;
     line-height: 2;
+    font-family: Tahoma, serif;
 }
 
 .links a.active {
@@ -31,6 +33,7 @@
     padding-bottom: 2px;
     padding-left: 20px;
     padding-right: 20px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 .links a:hover {
