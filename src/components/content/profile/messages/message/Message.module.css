@@ -32,4 +32,5 @@
 
 .body {
     grid-area: body;
+    color: black;
 }

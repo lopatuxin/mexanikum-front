@@ -5,7 +5,7 @@ import {Messages} from "./components/content/profile/messages/Messages";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Achievements} from "./components/content/profile/achievements/Achievements";
 
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div className="App">
@@ -13,7 +13,7 @@ const App = () => {
                 <NavBar/>
                 <div className='content'>
                     <Routes>
-                        <Route path='/messages' element={<Messages/>}/>
+                        <Route path='/messages' element={<Messages messages={props.messages}/>}/>
                         <Route path='/achievements' element={<Achievements/>}/>
                     </Routes>
                 </div>
