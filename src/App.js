@@ -13,7 +13,7 @@ const App = (props) => {
                 <NavBar/>
                 <div className='content'>
                     <Routes>
-                        <Route path='/messages' element={<Messages messages={props.messages}/>}/>
+                        <Route path='/messages' element={<Messages messages={props.state.messagesPage}/>}/>
                         <Route path='/achievements' element={<Achievements/>}/>
                     </Routes>
                 </div>
