@@ -17,6 +17,10 @@ export const Profile = () => {
                     <NavLink className={link => link.isActive ? profile.active : profile.links}
                              to='/achievements'>Достижения</NavLink>
                 </div>
+                <div>
+                    <NavLink className={link => link.isActive ? profile.active : profile.links}
+                             to='/settings'>Настройки</NavLink>
+                </div>
             </div>
         </div>
     )

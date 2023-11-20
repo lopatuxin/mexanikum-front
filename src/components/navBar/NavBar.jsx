@@ -1,12 +1,12 @@
 import navBar from './NavBar.module.css'
 import Profile from "./profile/Profile";
-import {Course} from "./course/Course";
+import {School} from "./school/School";
 import {Community} from "./community/Community";
 export const NavBar = () => {
     return (
         <nav className={navBar.navBar}>
             <Profile/>
-            <Course/>
+            <School/>
             <Community/>
         </nav>
     )
