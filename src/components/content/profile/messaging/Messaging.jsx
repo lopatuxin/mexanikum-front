@@ -1,11 +1,11 @@
 import messagingPage from './Messaging.module.css'
 import React from "react";
 
-export const Messaging = () => {
+export const Messaging = (props) => {
     let newMessage = React.createRef();
     let sendingMessage = () => {
         let text = newMessage.current.value;
-        alert(text) }
+        props.newMessage(text) }
     return (
         <div className={messagingPage.messagingPage}>
             <form className={messagingPage.messageForm}>
