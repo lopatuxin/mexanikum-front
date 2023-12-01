@@ -1,4 +1,4 @@
-import {render} from "../render/RenderSite";
+let render = () => {}
 
 let state = {
     messagesPage: {
@@ -13,7 +13,7 @@ let state = {
     }
 }
 window.state = state
-export let addMessage = () => {
+export const addMessage = () => {
     debugger
     let newMessage = {
         id: 9,
@@ -25,9 +25,13 @@ export let addMessage = () => {
     render(state)
 }
 
-export let updateMessageText = (newText) => {
+export const updateMessageText = (newText) => {
     state.messagesPage.messageText = newText
     render(state)
+}
+
+export const subscribe = (observer) => {
+    render = observer;
 }
 
 export default state
