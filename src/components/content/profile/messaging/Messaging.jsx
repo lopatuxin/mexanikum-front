@@ -4,14 +4,19 @@ import React from "react";
 export const Messaging = (props) => {
     let newMessage = React.createRef();
     let sendingMessage = () => {
-        let text = newMessage.current.value;
-        props.newMessage(text) }
+        props.newMessage()
+    }
+
+    let onMessageChange = () => {
+        let text = newMessage.current.value
+        props.updateMessageText(text)
+    }
     return (
         <div className={messagingPage.messagingPage}>
-            <form className={messagingPage.messageForm}>
-                <textarea ref={newMessage}></textarea>
+            <div className={messagingPage.messageForm}>
+                <textarea onChange={onMessageChange} ref={newMessage} value={props.messageText}/>
                 <button className={messagingPage.buttonSend} onClick={sendingMessage}>Отправить</button>
-            </form>
+            </div>
         </div>
     )
 }
