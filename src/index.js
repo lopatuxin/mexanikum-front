@@ -1,21 +1,21 @@
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import state, {addMessage, subscribe, updateMessageText} from './redux/State'
+import store from './redux/State'
 import ReactDOM from "react-dom/client";
 import React from "react";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-export let render = (state) => {
+export let render = () => {
     root.render(
         <React.StrictMode>
-            <App state={state}
-                 newMessage={addMessage}
-                 updateMessageText={updateMessageText}/>
+            <App state={store.getState()}
+                 newMessage={store.addMessage.bind(store)}
+                 updateMessageText={store.updateMessageText.bind(store)}/>
         </React.StrictMode>
     );
 }
 
-subscribe(render)
-render(state);
+store.subscribe(render)
+render(store.getState());
 reportWebVitals();
