@@ -32,6 +32,13 @@ let store = {
     updateMessageText(newText) {
         this._state.messagesPage.messageText = newText
         this.render(this._state)
+    },
+    dispatch(action) {
+        if (action.type === "ADD-MESSAGE") {
+            this.addMessage()
+        } else if (action.type === "UPDATE-MESSAGE-TEXT") {
+            this.updateMessageText(action.newText)
+        }
     }
 }
 

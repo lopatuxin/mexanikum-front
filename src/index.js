@@ -10,8 +10,7 @@ export let render = () => {
     root.render(
         <React.StrictMode>
             <App state={store.getState()}
-                 newMessage={store.addMessage.bind(store)}
-                 updateMessageText={store.updateMessageText.bind(store)}/>
+                 dispatch={store.dispatch.bind(store)}/>
         </React.StrictMode>
     );
 }
