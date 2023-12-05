@@ -1,18 +1,16 @@
 import messagingPage from './Messaging.module.css'
 import React from "react";
+import {addMessageAction, updateMessageTextAction} from "../../../../redux/State";
 
 export const Messaging = (props) => {
     let newMessage = React.createRef();
     let sendingMessage = () => {
-        props.dispatch({type: "ADD-MESSAGE"})
+        props.dispatch(addMessageAction())
     }
 
     let onMessageChange = () => {
         let text = newMessage.current.value
-        props.dispatch({
-            type: "UPDATE-MESSAGE-TEXT",
-            newText: text
-        })
+        props.dispatch(updateMessageTextAction(text))
     }
     return (
         <div className={messagingPage.messagingPage}>

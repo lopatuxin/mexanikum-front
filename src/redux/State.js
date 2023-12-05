@@ -42,4 +42,9 @@ let store = {
     }
 }
 
+export const addMessageAction = () => ({type: "ADD-MESSAGE"})
+export const updateMessageTextAction = (text) => ({
+    type: "UPDATE-MESSAGE-TEXT",
+    newText: text
+})
 export default store
