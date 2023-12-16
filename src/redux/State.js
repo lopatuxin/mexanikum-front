@@ -6,14 +6,14 @@ let store = {
     },
     _state: {
         messagesPage: {
-            messages: [
-                {id: 1, name: 'Антон Лопатухин', message: 'Привет'},
-                {id: 2, name: 'Владимир Лопатухин', message: 'Привет, как дела'},
-                {id: 3, name: 'Елена Лопатухина', message: 'Пока'},
-                {id: 4, name: 'Леля Лопатухина', message: 'Привет'},
-                {id: 5, name: 'Антон Лопатухин', message: 'Привет'}
+            emails: [
+                {id: 1, name: 'Антон Лопатухин', messages: 'Привет'},
+                {id: 2, name: 'Владимир Лопатухин', messages: 'Привет, как дела'},
+                {id: 3, name: 'Елена Лопатухина', messages: 'Пока'},
+                {id: 4, name: 'Леля Лопатухина', messages: 'Привет'},
+                {id: 5, name: 'Антон Лопатухин', messages: 'Привет'}
             ],
-            messageText: 'Hello'
+            messageText: ''
         }
     },
     getState() {
@@ -22,11 +22,11 @@ let store = {
     addMessage() {
         let newMessage = {
             id: 9,
-            message: this._state.messagesPage.messageText,
+            messages: this._state.messagesPage.messageText,
             name: 'Anton'
         }
-        this._state.messagesPage.messageText = 'Hello'
-        this._state.messagesPage.messages.push(newMessage)
+        this._state.messagesPage.messageText = ''
+        this._state.messagesPage.emails.push(newMessage)
         this.render(this._state)
     },
     updateMessageText(newText) {

@@ -1,10 +1,10 @@
-.messages {
+.emails {
     display: grid;
     grid-template-rows: auto;
     grid-gap: 10px;
 }
 
-.messages a {
+.emails a {
     text-decoration: none;
 }
 

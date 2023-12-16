@@ -1,4 +1,4 @@
-.message {
+.email {
     display: grid;
     grid-template-areas:
             "avatar name"
@@ -12,7 +12,7 @@
     height: 70px;
 }
 
-.message:hover {
+.email:hover {
     background-color: #C0E8F6;
 }
 

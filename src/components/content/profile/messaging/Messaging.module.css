@@ -10,18 +10,37 @@
 }
 
 .messageForm {
-    align-self: end;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
     padding: 10px;
 }
 
 .messageForm textarea {
+    flex: 8;
     border-radius: 15px;
     resize: none;
     padding: 10px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
-.buttonSend {
-    height: 20px;
-    align-self: end;
-    border-radius: 10px;
+.messageForm button {
+    flex: 1;
+    height: 54px;
+    border-radius: 15px;
+    background-color: #f26430;
+    color: #EBEBEB;
+    font-family: Tahoma, serif;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.myMessages p{
+    display: flex;
+    flex-direction: row;
+    background-color: #EBEBEB;
+    width: 50%;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }

@@ -14,9 +14,12 @@ export const Messaging = (props) => {
     }
     return (
         <div className={messagingPage.messagingPage}>
+            <div className={messagingPage.myMessages}>
+                    <p>hello</p>
+            </div>
             <div className={messagingPage.messageForm}>
+                <button onClick={sendingMessage}>Отправить</button>
                 <textarea onChange={onMessageChange} ref={newMessage} value={props.messageText}/>
-                <button className={messagingPage.buttonSend} onClick={sendingMessage}>Отправить</button>
             </div>
         </div>
     )
